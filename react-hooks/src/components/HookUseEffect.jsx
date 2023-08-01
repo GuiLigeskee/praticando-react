@@ -4,7 +4,7 @@ const HookUseEffect = () => {
 
     // 1 - useEffect sem dependencias
     useEffect(() => {
-        console.log("Estou sendo executado")
+        // console.log("Estou sendo executado")
     });
 
     const [number, setNumber] = useState(1);
@@ -15,7 +15,7 @@ const HookUseEffect = () => {
 
     // 2 - useEffect com array de dependencias vazio
     useEffect(() => {
-        console.log("Serei executado apenas uma vez!")
+        // console.log("Serei executado apenas uma vez!")
     }, [])
 
     // 3 - useEffect com dependencias no array
@@ -23,7 +23,7 @@ const HookUseEffect = () => {
 
     useEffect(() => {
 
-        if(anotherNumber > 0) console.log("Sou executado apenas quando o anotherNumber muda!")
+        // if(anotherNumber > 0) console.log("Sou executado apenas quando o anotherNumber muda!")
 
     }, [anotherNumber])
 
